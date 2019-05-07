@@ -24,7 +24,7 @@
     "node": "8.9.4"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/index.js",
     "start:dev": "cd server && nodemon server.js"
   },
   "devDependencies": {
