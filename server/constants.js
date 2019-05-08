@@ -5,6 +5,7 @@ const COOKIE_TOKEN = 'u_auth';
 
 const ERRORS = {
     EMAIL_NOT_FOUND: 'No user with this email!',
+    ARTICLE_NOT_FOUND: 'No article with this type!',
     WRONG_PASSWORD: 'Wrong password! Try again.',
     NOT_ADMIN: 'You are not allowed. Admin role only!'
 };

@@ -1,21 +1,18 @@
 import axios from 'axios';
 
 export const api = {
-
-
     upload: (url, data, callback) => {
         const formData = toFormData(data);
-        axios.post('/api'+url, formData).then((res) => {
+        axios.post('/api' + url, formData).then((res) => {
                 callback(res);
             }
         );
     },
     post: (url, data, callback) => {
         const json = data;
-
         const config = {
             method: 'POST',
-            url: '/api'+url,
+            url: '/api' + url,
             headers: {'content-type': 'application/json'},
             data: json
         };
@@ -32,8 +29,9 @@ export const api = {
                 alert(`Server error: ${e}`)
             });
     },
-    get: (url, callback) => {
-        return axios.get('/api'+url)
+    get: (url, callback, params) => {
+        console.log(params);
+        return axios.get('/api' + url,{params})
             .then((res) => {
                 return res.data;
             })

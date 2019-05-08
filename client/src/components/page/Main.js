@@ -1,5 +1,6 @@
 import React from 'react';
 import frame1 from '../../assets/frame1.jpeg';
+import Article from "../Article";
 const Main = () => {
     return (
         <div className='page page-main'>
@@ -50,6 +51,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+            <Article name={'MAIN-2'}/>
         </div>
     );
 };
